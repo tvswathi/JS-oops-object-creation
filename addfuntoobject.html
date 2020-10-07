@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Add function/method to the object </title>
+	<script>
+		function blogspot(Name,msg){
+			this.Name=Name;
+			this.msg=msg;
+			this.addcategory=addcategory;
+		}
+
+		function addcategory(category){
+			this.category=category;
+		}
+
+		var bs1=new blogspot("Swathi","Never Trust Anyone");
+		bs1.addcategory("********New Discovered Msg*********");
+		document.write(bs1.Name+"</br>");
+		document.write(bs1.msg +"</br>");
+		document.write(bs1.category+"</br>")
+
+		var bs2 =new blogspot("Unnikrishnan","Never expect return while helping others");
+		bs2.addcategory("********OLD Discovered Msg*********")
+		document.write(bs2.Name+"</br>");
+		document.write(bs2.msg +"</br>");
+		document.write(bs2.category+"</br2>")
+	</script>
+</head>
+<body>
+
+</body>
+</html>

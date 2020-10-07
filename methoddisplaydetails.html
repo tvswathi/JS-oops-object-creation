@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Display the details create a method </title>
+	<script>
+		function blogspot(Name,msg){
+			this.Name=Name;
+			this.msg=msg;
+			this.addcategory=addcategory;
+			this.displayblogspot=displayblogspot;
+		}
+		function addcategory(category){
+			this.category=category;
+		}
+		function displayblogspot(){
+			document.write(this.Name +"</br>");
+			document.write(this.msg +"</br>");
+			document.write(this.category + "</br>");
+		}
+
+		var bs1=new blogspot("Swathi","Hai");
+		bs1.addcategory("child");
+		bs1.displayblogspot();
+
+		var bs2=new blogspot("Unni", "Hello");
+		bs2.addcategory("Parent");
+		bs2.displayblogspot();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
